@@ -1,5 +1,6 @@
 package xingzy.com.iocdemo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick({R.id.btn1})
     public void show(View view) {
-        Toast.makeText(this, "点击了", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, FragmentContainerActivity.class));
     }
 
     public List<String> getDatas() {
